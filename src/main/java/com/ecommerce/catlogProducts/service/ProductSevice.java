@@ -20,7 +20,7 @@ public class ProductSevice {
     }
 
     public List<Product> getProductsByCategory(Long categoryId){
-
+        System.out.println(productRepository.findByCategoryId(categoryId));
         return productRepository.findByCategoryId(categoryId);
 
     }

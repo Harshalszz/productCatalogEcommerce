@@ -17,6 +17,7 @@ public class CategoryService {
     }
 
     public List<Category> getAllCategories() {
+        System.out.println(categoryRepository.findAll());
         return categoryRepository.findAll();
 
     }
