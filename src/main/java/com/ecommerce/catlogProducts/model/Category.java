@@ -14,7 +14,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    // one to many mapping for product
+    // one-to-many mapping for product
     //as one category can have many products under it
     @OneToMany(mappedBy = "category" , cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Product> productSet;
